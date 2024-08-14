@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "884679850292",
+    "project_id": "firestore-error-reproduction",
+    "storage_bucket": "firestore-error-reproduction.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884679850292:android:4138163f26035d5c674d61",
+        "android_client_info": {
+          "package_name": "com.reproduction.error"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWoQynNz6LglOxtyZU14fy04R3g0ppbzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
