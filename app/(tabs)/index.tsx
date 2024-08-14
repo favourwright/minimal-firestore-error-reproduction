@@ -2,8 +2,25 @@ import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
+import firestore from '@react-native-firebase/firestore';
+import { useEffect } from 'react';
 
 export default function TabOneScreen() {
+  const addUser = () => {
+    firestore()
+      .collection('Users')
+      .add({
+        name: 'Ada Lovelace',
+        age: 30,
+      })
+      .then(() => {
+        console.log('User added!');
+      });
+  }
+  useEffect(()=>{
+    addUser()
+  },[])
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab One</Text>
